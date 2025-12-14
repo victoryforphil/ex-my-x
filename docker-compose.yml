@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3100:3000"
+    environment:
+      - X_API_KEY=${X_API_KEY}
+      - X_KEY_SECRET=${X_KEY_SECRET}
+      - X_AUTH_ACCESS=${X_AUTH_ACCESS}
+      - X_AUTH_ACCESS_TOKEN_SECRET=${X_AUTH_ACCESS_TOKEN_SECRET}
+    restart: unless-stopped
