@@ -4,6 +4,12 @@ A Tinder-style tweet deletion app. Swipe left to delete, swipe right to keep.
 
 ![Main UI](notes/screenshots/main-ui.png)
 
+## Quick Start
+
+```bash
+docker run -p 3000:3000 -e X_API_KEY=key -e X_KEY_SECRET=secret -e X_AUTH_ACCESS=token -e X_AUTH_ACCESS_TOKEN_SECRET=token_secret ghcr.io/victoryforphil/ex-my-x:main
+```
+
 ## Features
 
 - **Swipe Interface**: Drag cards left/right or use buttons to delete/keep tweets
